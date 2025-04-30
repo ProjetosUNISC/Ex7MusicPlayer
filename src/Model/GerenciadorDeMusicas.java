@@ -8,8 +8,12 @@ import java.util.ArrayList;
 
 public class GerenciadorDeMusicas {
 
+
+
     private static Player player;
 
+
+        //toca a musica
     public static void tocarMusica(String caminho) {
         try {
             if (player != null) {
@@ -37,6 +41,7 @@ public class GerenciadorDeMusicas {
         }
     }
 
+        //lista as musicas
     public static ArrayList<Musica> listarMusicas(String caminhoPasta) {
         ArrayList<Musica> lista = new ArrayList<>();
         File pasta = new File(caminhoPasta);
@@ -50,4 +55,5 @@ public class GerenciadorDeMusicas {
         }
         return lista;
     }
+
 }
